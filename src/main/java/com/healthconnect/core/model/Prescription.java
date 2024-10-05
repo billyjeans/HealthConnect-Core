@@ -23,5 +23,9 @@ public class Prescription {
     @ManyToOne
     @JoinColumn(name = "doctor_id")
     private Doctor doctor;
+
+    @ManyToOne
+    @JoinColumn(name = "medical_record_id")
+    private MedicalRecord medicalRecord; // Reference to MedicalRecord
 }
 
